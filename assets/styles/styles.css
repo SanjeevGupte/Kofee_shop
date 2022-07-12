@@ -1,0 +1,47 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+/*
+style the elements with a class of page-row
+ - width of 100%
+ - clear: both; //ensures elements that are floated cant be on the left or right of this element
+ - give the element a padding of 5%
+ - give the element a margin of 2% on the top and bottom
+*/
+.page-row{
+    width: 100%;
+    clear: both;
+    padding: 5%;
+    margin: 2%;
+  }
+  
+  
+  /*
+  style the elements with a class of card
+   - width of 20%
+   - height of 300px
+   - margin of 2.5%
+   - top padding of 15%
+   - float cards to the left
+   - background color of white
+   - align the text to the center
+   - make the text color black
+   - set the background size to contain //Scale the image to the largest size such that both its width and its height can fit inside the content area
+   - set the background to not repeat
+  */
+  .card {
+    width: 20%;
+    height: 300px;
+    margin: 2.5%;
+    padding-top: 15%;
+    float: left;
+    background-color: white;
+    text-align: center;
+    color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
