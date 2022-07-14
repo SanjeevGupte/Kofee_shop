@@ -90,35 +90,83 @@
         <h2> CONTACT INFORMATION </h2>
     </div>
     <!-- Radio Buttons-->
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          Ship
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
-          Pick up
-        </label>
-      </div>
+
     <!-- Login Form-->
     <div class="container center">
         <form>
-            <div class="mb-3 col-sm-7">
-                <label for="exampleInputName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleInputName" aria-describedby="NameHelp" required>
+            <div class="form-check" form-border>
+                <p>Delivery Method</p>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Ship
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Pick up
+                </label>
+            </div>
+            <p> </p>
+            <p>Shipping Address</p>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+            </div>
+            <div class="mb-3 col-md-7">
+                <label for="exampleInputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="exampleInputAddress" aria-describedby="addressHelp"
+                    placeholder="Enter Address" required>
+            </div>
+            <div class="mb-3 col-md-7">
+                <label for="exampleInputAddress1" class="form-label">Address</label>
+                <input type="text" class="form-control" id="exampleInputAddress1" aria-describedby="addressHelp1"
+                    placeholder="Apartment, suite, etc. (optional)">
             </div>
             <div class="mb-3 col-sm-7">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Email" required>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="City" aria-label="City" required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="ZIP Code" aria-label="ZIP Code" required>
+                </div>
             </div>
             <div class="mb-3 col-md-7">
-                <label for="exampleInputMessage" class="form-label">Message</label>
-                <input type="text" class="form-control" id="exampleInputMessage" aria-describedby="messageHelp">
+                <label for="examplephone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp1"
+                    placeholder="Enter Valid Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            or Cancel
+            <div class="mb-3 col-md-7">
+                <label for="exampleccnum" class="form-label">Credit Card Number</label>
+                <input type="text" class="form-control" id="exampleInputccnum" aria-describedby="ccHelp"
+                    placeholder="Enter Credit Card Number" required>
+            </div>
+            <div class="mb-3 col-md-7">
+                <label for="exampleexpdt" class="form-label">Expiration Date</label>
+                <input type="text" class="form-control" id="exampleInputexpdt" aria-describedby="expdtHelp"
+                    placeholder="Expiration Date(MM /YY)" pattern="[0-12]/[0-31]" required>
+            </div>
+            <div class="mb-3 col-md-7">
+                <label for="examplesecCode" class="form-label">Security Code</label>
+                <input type="text" class="form-control" id="examplesecCode" aria-describedby="expdtHelp"
+                    placeholder="Security Code" pattern="[0-9][0-9][0-9][0-9]" required>
+            </div>
+            <p>
+
+            </p>
+            <div class="container">
+                <a href="OrderPlaced.html" class="btn btn-danger" role="button">Place Order</a>
+                </button>
+            </div>
         </form>
         <a class="text-danger" href="signup.html" text-red>New Customer? Sign up</a>
     </div>
@@ -129,12 +177,12 @@
         <footer>
 
             <div id="social-links">
-                <a target="_blank" href="http://facebook.com"> <img src="/assets/images/facebook-2429746__340.webp" width="30"
-                        height="30" class="d-inline-block align-top" alt="connect via Facebook"></a>
-                <a target="_blank" href="http://twitter.com"> <img src="/assets/images/twitter-bird-1366218__340.png" width="30"
-                        height="30" class="d-inline-block align-top" alt="connect via twitter"></a>
-                <a target="_blank" href="https://www.instagram.com/"> <img src="/assets/images/insta-1562136__340.webp" width="30"
-                        height="30" class="d-inline-block align-top" alt="connect via Instagram"></a>
+                <a target="_blank" href="http://facebook.com"> <img src="/assets/images/facebook-2429746__340.webp"
+                        width="30" height="30" class="d-inline-block align-top" alt="connect via Facebook"></a>
+                <a target="_blank" href="http://twitter.com"> <img src="/assets/images/twitter-bird-1366218__340.png"
+                        width="30" height="30" class="d-inline-block align-top" alt="connect via twitter"></a>
+                <a target="_blank" href="https://www.instagram.com/"> <img src="/assets/images/insta-1562136__340.webp"
+                        width="30" height="30" class="d-inline-block align-top" alt="connect via Instagram"></a>
             </div>
 
         </footer>
