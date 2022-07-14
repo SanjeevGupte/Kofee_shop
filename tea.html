@@ -59,8 +59,9 @@
                         <a class="nav-link" href="login.html">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="shoppingcart.html">Cart <img src="/assets/images/shopping-cart.png"
-                                width="30" height="30" class="d-inline-block align-top" alt=""></a>
+                        <a class="nav-link" href="shoppingcart.html">Cart (<span id="counter"></span>) <img
+                                src="/assets/images/shopping-cart.png" width="30" height="30"
+                                class="d-inline-block align-top" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -98,7 +99,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Assam</h5>
                     <p class="card-text">$7.50</p>
-                    <button type="button" class="btn btn-success">Add TO CART</button>
+                    <button type="button" onclick="incrementCounter()" class="btn btn-success">Add TO CART</button>
                 </div>
             </div>
         </div>
@@ -108,7 +109,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Chai Masala</h5>
                     <p class="card-text">$7.50</p>
-                    <button type="button" class="btn btn-success">Add TO CART</button>
+                    <button type="button" onclick="incrementCounter()" class="btn btn-success">Add TO CART</button>
                 </div>
             </div>
         </div>
@@ -118,7 +119,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Darjeeling</h5>
                     <p class="card-text"> $7.50</p>
-                    <button type="button" class="btn btn-success">Add TO CART</button>
+                    <button type="button" onclick="incrementCounter()" class="btn btn-success">Add TO CART</button>
                 </div>
             </div>
         </div>
@@ -128,7 +129,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Chamomile</h5>
                     <p class="card-text"> $7.50</p>
-                    <button type="button" class="btn btn-success">Add TO CART</button>
+                    <button type="button" onclick="incrementCounter()" class="btn btn-success">Add TO CART</button>
                 </div>
             </div>
         </div>
@@ -138,7 +139,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Earl Grey</h5>
                     <p class="card-text"> $7.50</p>
-                    <button type="button" class="btn btn-success">Add TO CART</button>
+                    <button type="button" onclick="incrementCounter()" class="btn btn-success">Add TO CART</button>
                 </div>
             </div>
         </div>
@@ -148,7 +149,7 @@
                 <div class="card-body">
                     <h5 class="card-title">English Breakfast</h5>
                     <p class="card-text"> $7.50</p>
-                    <button type="button" class="btn btn-success">Add TO CART</button>
+                    <button type="button" onclick="incrementCounter()" class="btn btn-success">Add TO CART</button>
                 </div>
             </div>
         </div>
@@ -158,7 +159,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Hibuscus Blossom</h5>
                     <p class="card-text"> $7.50</p>
-                    <button type="button" class="btn btn-success">Add TO CART</button>
+                    <button type="button" onclick="incrementCounter()" class="btn btn-success">Add TO CART</button>
                 </div>
             </div>
         </div>
@@ -168,7 +169,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Jasmine</h5>
                     <p class="card-text"> $7.50</p>
-                    <button type="button" class="btn btn-success">Add TO CART</button>
+                    <button type="button" onclick="incrementCounter()" class="btn btn-success">Add TO CART</button>
                 </div>
             </div>
         </div>
@@ -178,7 +179,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Magnolia Jade</h5>
                     <p class="card-text">$9.00</p>
-                    <button type="button" class="btn btn-success">Add TO CART</button>
+                    <button type="button" onclick="incrementCounter()" class="btn btn-success">Add TO CART</button>
                 </div>
             </div>
         </div>
@@ -224,13 +225,13 @@
         <footer>
 
             <div id="social-links">
-                <a target="_blank" href="http://facebook.com"> <img src="/assets/images/facebook-2429746__340.webp" width="30"
-                        height="30" class="d-inline-block align-top" alt="connect via Facebook"></a>
+                <a target="_blank" href="http://facebook.com"> <img src="/assets/images/facebook-2429746__340.webp"
+                        width="30" height="30" class="d-inline-block align-top" alt="connect via Facebook"></a>
 
-                <a target="_blank" href="http://twitter.com"> <img src="/assets/images/twitter-bird-1366218__340.png" width="30"
-                        height="30" class="d-inline-block align-top" alt="connect via twitter"></a>
-                <a target="_blank" href="https://www.instagram.com/"> <img src="/assets/images/insta-1562136__340.webp" width="30"
-                        height="30" class="d-inline-block align-top" alt="connect via Instagram"></a>
+                <a target="_blank" href="http://twitter.com"> <img src="/assets/images/twitter-bird-1366218__340.png"
+                        width="30" height="30" class="d-inline-block align-top" alt="connect via twitter"></a>
+                <a target="_blank" href="https://www.instagram.com/"> <img src="/assets/images/insta-1562136__340.webp"
+                        width="30" height="30" class="d-inline-block align-top" alt="connect via Instagram"></a>
             </div>
 
         </footer>
@@ -239,7 +240,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-
+    <script src="/assets/scripts/main.js"></script>
 </body>
 
 </html>
