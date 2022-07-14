@@ -13,3 +13,8 @@ function incrementCounter() {
     c_counter.innerHTML = parseInt(c_counter.innerHTML) + 1;
     localStorage.setItem("cartCount",c_counter.innerHTML);
 }
+
+function clearCounter() {
+    localStorage.clear();
+    localStorage.setItem("cartCount",0);
+}
