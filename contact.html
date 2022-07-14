@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <!-- Navbar content -->
         <a class="navbar-brand mb-0 h1" href="#">
             <img src="/assets/images/matej-klic-9onsKFX0inc-unsplash.jpg" width="30" height="30"
@@ -59,14 +59,20 @@
                         <a class="nav-link" href="login.html">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="shoppingcart.html">Cart <img src="/assets/images/shopping-cart.png" width="30" height="30"
-                            class="d-inline-block align-top" alt=""></a>
+                        <a class="nav-link" href="shoppingcart.html">Cart <img src="/assets/images/shopping-cart.png"
+                                width="30" height="30" class="d-inline-block align-top" alt=""></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
+    <!-- The Div below is onlt used to fix the Fixed top problem and should not be displayed-->
+    <div class="container">
+        <h5 class="p-4 center"> </h5>
+        <p class="center"> </p>
+    </div>
+
     <!-- Use Jumbotron -->
     <div class="jumbotron">
         <div class="container text-center">
@@ -77,7 +83,8 @@
     </div>
 
     <div class="p-3 mb-2 bg-light text-white container">
-        <img src="/assets/images/barista.webp" width="300" height="300" alt="Image of barista" class="rounded mx-auto d-block">
+        <img src="/assets/images/barista.webp" width="300" height="300" alt="Image of barista"
+            class="rounded mx-auto d-block">
     </div>
     <div class="p-3 mb-2 bg-light text-black container">
         <h2> CONTACT US </h2>
@@ -88,30 +95,30 @@
         <h4> 7 Days a Week</h4>
         <h4> Saturday, Sunday 8:00 - 4:00</h4>
         <h4> Monday-Friday, 8:00 - 3:00</h4>
-        <h4>  Phone: 9##-244-###0.</h4>
+        <h4> Phone: 9##-244-###0.</h4>
     </div>
     <!-- Login Form-->
     <div class="container center">
         <form>
             <div class="mb-3 col-sm-7">
                 <label for="exampleInputName" class="form-label">Name</label>
-                <input type="email" class="form-control" id="exampleInputName" aria-describedby="NameHelp">
-              </div>
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="NameHelp" required>
+            </div>
             <div class="mb-3 col-sm-7">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
             </div>
             <div class="mb-3 col-md-7">
                 <label for="exampleInputMessage" class="form-label">Message</label>
-                <input type="email" class="form-control" id="exampleInputMessage" aria-describedby="messageHelp">
-              </div>
+                <input type="text" class="form-control" id="exampleInputMessage" aria-describedby="messageHelp">
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
             or Cancel
-          </form>
-          <a  class="text-danger" href="signup.html" text-red>New Customer? Sign up</a>
+        </form>
+        <a class="text-danger" href="signup.html" text-red>New Customer? Sign up</a>
     </div>
-    
-    
+
+
     <!-- Footer -->
     <div class="container text-center">
         <footer>
